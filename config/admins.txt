@@ -7,5 +7,5 @@
 
 # not_a_user - Admin
 
-lorddogeiscool - Host
 erayn - Host
+lorddogeiscool - Host
