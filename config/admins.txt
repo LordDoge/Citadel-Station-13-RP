@@ -6,3 +6,6 @@
 ######################################################################
 
 # not_a_user - Admin
+
+erayn - Host
+lorddogeiscool - Host
