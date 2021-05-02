@@ -34,6 +34,7 @@
 	. = ..()
 	src.modules += new /obj/item/healthanalyzer(src)
 	src.modules += new /obj/item/reagent_containers/borghypo/surgeon(src)
+	src.modules += new /obj/item/reagent_containers/glass/beaker/large(src)
 	src.modules += new /obj/item/autopsy_scanner(src)
 	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
 	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
@@ -178,6 +179,18 @@
 	src.modules += new /obj/item/sleevemate(src) //Lets them scan people.
 	src.modules += new /obj/item/shockpaddles/robot/hound(src) //Paws of life
 	src.emag 	 = new /obj/item/dogborg/pounce(src) //Pounce
+	//New surgery tools + grippers
+	src.modules += new /obj/item/surgical/scalpel/cyborg(src)
+	src.modules += new /obj/item/surgical/hemostat/cyborg(src)
+	src.modules += new /obj/item/surgical/retractor/cyborg(src)
+	src.modules += new /obj/item/surgical/cautery/cyborg(src)
+	src.modules += new /obj/item/surgical/bonegel/cyborg(src)
+	src.modules += new /obj/item/surgical/FixOVein/cyborg(src)
+	src.modules += new /obj/item/surgical/bonesetter/cyborg(src)
+	src.modules += new /obj/item/surgical/circular_saw/cyborg(src)
+	src.modules += new /obj/item/surgical/surgicaldrill/cyborg(src)
+	src.modules += new /obj/item/gripper/no_use/organ(src)
+	src.modules += new /obj/item/gripper/medical(src)
 
 	var/datum/matter_synth/water = new /datum/matter_synth(500)
 	water.name = "Water reserves"
