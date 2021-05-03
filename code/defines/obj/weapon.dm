@@ -35,7 +35,7 @@
 	throwforce = 0
 	throw_speed = 4
 	throw_range = 20
-	hitsound = 'sound/weapons/soapmouth.ogg'
+	
 	
 /obj/item/soap/nanotrasen
 	desc = "A NanoTrasen-brand bar of soap. Smells of phoron."
