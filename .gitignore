@@ -224,6 +224,7 @@ tools/CreditsTool/obj/*
 !/config/title_screens/images/exclude
 
 #Linux docker
+<<<<<<< HEAD
 tools/LinuxOneShot/SetupProgram/obj/*
 tools/LinuxOneShot/SetupProgram/bin/*
 tools/LinuxOneShot/SetupProgram/.vs
@@ -234,3 +235,12 @@ tools/LinuxOneShot/TGS_Logs
 config/admins.txt
 config/legacy/config.txt
 vorestation.dme
+=======
+/tools/LinuxOneShot/SetupProgram/obj/*
+/tools/LinuxOneShot/SetupProgram/bin/*
+/tools/LinuxOneShot/SetupProgram/.vs
+/tools/LinuxOneShot/Database
+/tools/LinuxOneShot/TGS_Config
+/tools/LinuxOneShot/TGS_Instances
+/tools/LinuxOneShot/TGS_Logs
+>>>>>>> parent of ffee042de (Merge branch 'master' into test-1)
