@@ -56,7 +56,6 @@
 						"ZOOM-BA" = "zoomba-medical"
 					 )
 
-
 /obj/item/robot_module/robot/clerical/butler
 	vr_sprites = list(
 						"Handy - Service" = "handy-service",

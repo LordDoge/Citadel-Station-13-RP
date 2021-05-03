@@ -59,8 +59,13 @@
 	var/datum/matter_synth/medicine = new /datum/matter_synth/medicine(10000)
 	synths += medicine
 
+	var/obj/item/stack/medical/advanced/ointment/O = new /obj/item/stack/medical/advanced/ointment(src)
 	var/obj/item/stack/nanopaste/N = new /obj/item/stack/nanopaste(src)
 	var/obj/item/stack/medical/advanced/bruise_pack/B = new /obj/item/stack/medical/advanced/bruise_pack(src)
+	
+	O.uses_charge = 1
+	O.charge_costs = list(1000)
+	O.synths = list(medicine)
 	N.uses_charge = 1
 	N.charge_costs = list(1000)
 	N.synths = list(medicine)
@@ -69,6 +74,7 @@
 	B.synths = list(medicine)
 	src.modules += N
 	src.modules += B
+	src.modules += O
 
 /obj/item/robot_module/robot/medical/surgeon/respawn_consumable(var/mob/living/silicon/robot/R, var/amount)
 
@@ -146,6 +152,11 @@
 
 	var/obj/item/stack/medical/advanced/ointment/K = new /obj/item/stack/medical/advanced/ointment(src)
 	var/obj/item/stack/medical/advanced/bruise_pack/L = new /obj/item/stack/medical/advanced/bruise_pack(src)
+	var/obj/item/stack/nanopaste/P = new /obj/item/stack/nanopaste(src)
+
+	P.uses_charge = 1
+	P.charge_costs = list(1000)
+	P.synths = list(medicine)
 	K.uses_charge = 1
 	K.charge_costs = list(1000)
 	K.synths = list(medicine)
@@ -153,7 +164,9 @@
 	L.charge_costs = list(1000)
 	L.synths = list(medicine)
 	src.modules += K
-	src.modules += L // END CITADEL CHANGES
+	src.modules += L 
+	src.modules += P 
+	// END CITADEL CHANGES
 
 	R.icon = 'icons/mob/widerobot_vr.dmi'
 	R.hands.icon = 'icons/mob/screen1_robot_vr.dmi'
